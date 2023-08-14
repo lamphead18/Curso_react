@@ -7,6 +7,12 @@ import Primeiro from './components /basicos/Primeiro';
 import ComParametro from './components /basicos/ComParametro';
 import Fragmento from './components /basicos/Fragmento';
 import Familia from "./components /basicos/Familia";
+import FamiliaMembro from "./components /basicos/FamiliaMembro";
+import ListaAlunos from "./components /repeticao/ListaAlunos";
+import TabelaProdutos from "./components /repeticao/TabelaProdutos";
+import ParOuImpar from "./components /condicional/ParOuImpar";
+import UsuarioInfo from "./components /condicional/UsuarioInfo";
+import DiretaPai from "./components /comunicacao/DiretaPai";
 
 export default (props) => {
     return (
@@ -41,7 +47,38 @@ export default (props) => {
                 </Card>
 
                 <Card titulo="#05 - Componente com Filhos" color='#413C58'>
-                    <Familia sobrenome='Franco'/>
+
+                    <Familia sobrenome='Franco'>
+                        <FamiliaMembro nome='Gabriel' />
+                        <FamiliaMembro nome='Luiz' />
+                        <FamiliaMembro nome='André' />
+                    </Familia>
+
+                </Card>
+
+                <Card titulo="#06 - Repetição" color='#DB5461'>
+
+                    <ListaAlunos></ListaAlunos>
+
+                </Card>
+
+                <Card titulo="#07 - Desafio Repetição" color='#58B09C'>
+
+                    <TabelaProdutos></TabelaProdutos>
+
+                </Card>
+
+                <Card titulo="#08 - Renderização Condicional" color='#274C77'>
+
+                    <ParOuImpar numero={21}></ParOuImpar>
+                    <UsuarioInfo usuario={{ nome: 'Fernando' }} />
+
+                </Card>
+
+                <Card titulo="#09 - Comunicação Direta" color='#E71D36'>
+
+                    <DiretaPai></DiretaPai>
+
                 </Card>
 
             </div>
