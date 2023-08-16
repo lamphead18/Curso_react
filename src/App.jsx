@@ -13,6 +13,9 @@ import TabelaProdutos from "./components /repeticao/TabelaProdutos";
 import ParOuImpar from "./components /condicional/ParOuImpar";
 import UsuarioInfo from "./components /condicional/UsuarioInfo";
 import DiretaPai from "./components /comunicacao/DiretaPai";
+import IndiretaPai from "./components /comunicacao/IndiretaPai";
+import Input from "./components /formulario/Input";
+import Contador from "./components /contador/Contador";
 
 export default (props) => {
     return (
@@ -78,6 +81,24 @@ export default (props) => {
                 <Card titulo="#09 - Comunicação Direta" color='#E71D36'>
 
                     <DiretaPai></DiretaPai>
+
+                </Card>
+
+                <Card titulo="#10 - Comunicação Indireta" color='#2F4550'>
+
+                    <IndiretaPai></IndiretaPai>
+
+                </Card>
+
+                <Card titulo="#11 - Componente Controlado (Input)" color='#77966D'>
+
+                    <Input></Input>
+
+                </Card>
+
+                <Card titulo="#12 - Contador)" color='#291528'>
+
+                    <Contador numeroInicial={0}></Contador>
 
                 </Card>
 
